@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:background="#667483"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="wrap_content">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/imageView"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:srcCompat="@drawable/ic_inprogress"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_9sdp"
+            android:id="@+id/textView"
+            android:layout_gravity="center|left"
+            android:text="Clipcodes"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_weight="0.2"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:srcCompat="@drawable/triangle" />
+</LinearLayout>

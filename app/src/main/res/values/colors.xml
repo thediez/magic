@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorMilestone">#FF2020</color>
+    <color name="yellow">#fafa91</color>
+    <color name="myYellow">#FFCB2C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparentMyYellow">#80FFCB2C</color>
+    <color name="likeOrange">#FF983D</color>
+    <color name="transparentLikeOrange">#80FF983D</color>
+    <color name="green">#5FC369</color>
+    <color name="transparentGreen">#805FC369</color>
+    <color name="red">#f05055</color>
+    <color name="transparentRed">#80f05055</color>
+
+</resources>

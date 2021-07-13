@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/container">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#5FC369"
+                app:cardCornerRadius="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_4sdp">
+
+                <ImageView
+                        android:id="@+id/main_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/main_dot" />
+
+                <TextView
+                        android:id="@+id/tvTaskID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="UID: 28"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintStart_toEndOf="@+id/main_dot"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPrjName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:fontFamily="@font/barlow_bold"
+                    android:text="TEST-Project_8_TIMEJET"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvTaskID"
+                    app:layout_constraintStart_toEndOf="@+id/tvTaskID"
+                    app:layout_constraintTop_toTopOf="@+id/tvTaskID" />
+
+                <ImageView
+                        android:id="@+id/cardStatusImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/card_status" />
+
+
+                <TextView
+                        android:id="@+id/tvIsCompleted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_semi_bold"
+                        android:text="Completed"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardStatusImage"
+                        app:layout_constraintEnd_toEndOf="@+id/cardStatusImage"
+                        app:layout_constraintHorizontal_bias="0.6"
+                        app:layout_constraintStart_toStartOf="@+id/cardStatusImage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.1" />
+
+                <ImageView
+                        android:id="@+id/imageCheckIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        app:layout_constraintStart_toStartOf="@+id/cardStatusImage"
+                        app:layout_constraintTop_toTopOf="@id/cardStatusImage"
+                        app:srcCompat="@drawable/ic_zaversheno"
+                        android:visibility="visible"/>
+
+                <ImageView
+                        android:id="@+id/imageReadCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardStatusImage"
+                        app:srcCompat="@drawable/read_card"
+                        android:visibility="invisible"/>
+
+                <ImageView
+                        android:id="@+id/imageNotReadCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/not_read_card"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardStatusImage"
+                        android:visibility="visible"/>
+
+                <TextView
+                        android:id="@+id/tvIsNotRead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_semi_bold"
+                        android:text="Unread"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_7sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageNotReadCard"
+                        app:layout_constraintEnd_toEndOf="@+id/imageNotReadCard"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/imageNotReadCard"
+                        app:layout_constraintTop_toTopOf="@+id/imageNotReadCard"
+                        app:layout_constraintVertical_bias="0.5"
+                        android:visibility="visible"/>
+
+                <TextView
+                        android:id="@+id/tvIsRead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_semi_bold"
+                        android:text="Reade"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_8sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageReadCard"
+                        app:layout_constraintEnd_toEndOf="@+id/imageReadCard"
+                        app:layout_constraintHorizontal_bias="0.65"
+                        app:layout_constraintStart_toStartOf="@+id/imageReadCard"
+                        app:layout_constraintTop_toTopOf="@+id/imageReadCard"
+                        app:layout_constraintVertical_bias="0.5"
+                        android:visibility="invisible"/>
+
+                <TextView
+                        android:id="@+id/tvTaskName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="TEST- Project_8_TimeJet"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPrjName" />
+
+                <TextView
+                        android:id="@+id/tvStepName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/barlow_bold"
+                        android:text="1.6, ADD CLOSE DEADLINE POP-UP"
+                        android:textSize="@dimen/_8sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTaskName" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:background="@drawable/layout_shape"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvStepName">
+
+                    <TextView
+                            android:id="@+id/textViewTimeProgress"
+                            android:layout_width="@dimen/_105sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Duration/hours:"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                            android:id="@+id/tvTimeProgress"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:textAlignment="textStart"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textViewTimeProgress"
+                            app:layout_constraintStart_toEndOf="@+id/textViewTimeProgress"
+                            app:layout_constraintTop_toTopOf="@+id/textViewTimeProgress" />
+
+                    <TextView
+                            android:id="@+id/tvTimeBudget"
+                            android:layout_width="@dimen/_105sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Time budget:"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewTimeProgress" />
+
+                    <TextView
+                            android:id="@+id/textViewTimeBudget"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:textAlignment="textStart"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvTimeBudget"
+                            app:layout_constraintStart_toEndOf="@+id/tvTimeBudget"
+                            app:layout_constraintTop_toTopOf="@+id/tvTimeBudget" />
+
+                    <TextView
+                        android:id="@+id/textViewTimeBudgetAdditionalTime"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:gravity="left"
+                        android:textSize="@dimen/_8sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewTimeBudget"
+                        app:layout_constraintStart_toEndOf="@+id/textViewTimeBudget"
+                        app:layout_constraintTop_toTopOf="@+id/textViewTimeBudget" />
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/circularProgressBar"
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            app:cpb_background_progressbar_color="#805FC369"
+                            app:cpb_background_progressbar_width="@dimen/_3sdp"
+                            app:cpb_progress_direction="to_right"
+                            app:cpb_progressbar_color="#5FC369"
+                            app:cpb_progressbar_width="@dimen/_2sdp"
+                            app:cpb_round_border="true"
+                            app:layout_constraintBottom_toTopOf="@+id/tvUsersAssigned"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.9"
+                            app:layout_constraintStart_toEndOf="@+id/tvTimeProgress"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/circle"
+                            android:layout_width="@dimen/_19sdp"
+                            android:layout_height="@dimen/_19sdp"
+                            android:background="@drawable/circle_layout_main"
+                            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+                            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+                            app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+                            app:layout_constraintTop_toTopOf="@+id/circularProgressBar">
+
+                        <TextView
+                                android:id="@+id/procent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/fields_shape"
+                                android:fontFamily="@font/barlow_extra_bold"
+                                android:text="100%"
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/_7sdp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.5" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                            android:id="@+id/tvUserAssigned"
+                            android:layout_width="@dimen/_105sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Assigned to:"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvTimeBudget" />
+
+                    <TextView
+                            android:id="@+id/tvUsersAssigned"
+                            android:layout_width="@dimen/_160sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:textAlignment="textStart"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvUserAssigned"
+                            app:layout_constraintStart_toEndOf="@+id/tvUserAssigned"
+                            app:layout_constraintTop_toTopOf="@+id/tvUserAssigned" />
+
+                    <TextView
+                            android:id="@+id/tvPredecessors"
+                            android:layout_width="@dimen/_105sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Predecessors:"
+                            android:textSize="@dimen/_8sdp"
+                            android:gravity="center_vertical"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvUserAssigned"
+                        />
+
+                    <TextView
+                            android:id="@+id/textViewPredecessors"
+                            android:layout_width="@dimen/_160sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:textAlignment="textStart"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintStart_toEndOf="@+id/tvPredecessors"
+                            app:layout_constraintTop_toBottomOf="@+id/tvUsersAssigned" />
+
+                    <TextView
+                            android:id="@+id/tvDedline"
+                            android:layout_width="@dimen/_105sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="Deadline:"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewPredecessors" />
+
+                    <TextView
+                            android:id="@+id/textViewDeadline"
+                            android:layout_width="@dimen/_160sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:textAlignment="textStart"
+                            android:textSize="@dimen/_8sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvDedline"
+                            app:layout_constraintStart_toEndOf="@+id/tvDedline"
+                            app:layout_constraintTop_toTopOf="@+id/tvDedline" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+                android:id="@+id/shadowImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/shadow_green" />
+    </LinearLayout>
+</RelativeLayout>

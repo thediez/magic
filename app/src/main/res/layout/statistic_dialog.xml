@@ -1,0 +1,137 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.graphics.Color" />
+
+        <variable
+                name="viewModel"
+                type="com.timejet.bio.timejet.ui.card.CardViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:openDrawer="start">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/statistic_graphic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/daylyWorked"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:singleLine="false"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:text="Daily working time"
+            android:fontFamily="@font/barlow_semi_bold"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/daylyWorkedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/barlow_bold"
+            android:gravity="bottom"
+            android:singleLine="false"
+            android:text="08:30"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/daylyWorked"
+            app:layout_constraintEnd_toEndOf="@+id/materialButtonToggleGroup"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/daylyWorked"
+            app:layout_constraintTop_toTopOf="@+id/daylyWorked"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/materialButtonToggleGroup"
+            app:layout_constraintTop_toBottomOf="@+id/materialButtonToggleGroup"
+            app:layout_constraintVertical_bias="0.1"
+            app:srcCompat="@drawable/statistic_timejet_clock" />
+
+        <LinearLayout
+            android:id="@+id/recycleLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStatCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/materialButtonToggleGroup"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDaily"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/color_state_material_toggle_button"
+                android:checkable="true"
+                android:textAllCaps="false"
+                android:text="Daily"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:textColor="#FFFFFF"
+                android:theme="@style/MatButtonStatistic"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMonthly"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/color_state_material_toggle_button"
+                android:checkable="true"
+                android:textAllCaps="false"
+                android:text="Monthly"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:textColor="#FFFFFF"
+                android:theme="@style/MatButtonStatistic"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

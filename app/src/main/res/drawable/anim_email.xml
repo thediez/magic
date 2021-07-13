@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/btn_email_1" />
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/btn_email_2" />
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/btn_email_3" />
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/btn_email_4" />
+
+
+</animation-list>

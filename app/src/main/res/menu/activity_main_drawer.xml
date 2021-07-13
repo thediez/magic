@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_download_parse_tasks"
+                android:icon="@drawable/ic_import_export_black_24dp"
+                android:title="@string/download_and_parse_tasks" />
+
+            <item
+                android:id="@+id/nav_sync"
+                android:icon="@drawable/ic_sync"
+                android:title="@string/sync_cloud" />
+
+            <item
+                android:id="@+id/nav_send_feedback"
+                android:icon="@drawable/ic_letter"
+                android:title="@string/send_feedback" />
+
+            <item
+                android:id="@+id/get_statistic"
+                android:icon="@drawable/ic_statistic"
+                android:title="Statistic" />
+
+            <item
+                android:id="@+id/nav_delete_all"
+                android:icon="@drawable/ic_delete"
+                android:title="@string/delete_all" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

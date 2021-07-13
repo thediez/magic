@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/text1"
+    android:textSize="@dimen/_9sdp"
+    android:paddingBottom="@dimen/_4sdp"
+    android:paddingTop="@dimen/_4sdp"
+    android:textColor="#50B7D8"
+    android:dividerHeight="1dp"
+    android:singleLine="true"
+    android:fontFamily="@font/barlow_bold"
+    android:gravity="center|left"
+    android:background="@drawable/spinner_item_divider">
+
+</TextView>

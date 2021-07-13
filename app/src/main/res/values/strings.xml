@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name"> </string>
+    <string name="get_all_tasks">Get Tasks</string>
+
+    <string name="parse_xlsx">Parse excel</string>
+    <string name="upload_db">upload DB</string>
+    <string name="choose_step">Choose Step</string>
+    <string name="logout">LOGOUT</string>
+    <string name="sync">Sync</string>
+    <string name="excel_report">Excel Report</string>
+    <string name="clear_all">clear All</string>
+    <string name="start_task">Start</string>
+    <string name="pause_task">Pause</string>
+    <string name="end_task">End</string>
+    <string name="project_name">Project Name:</string>
+    <string name="task_progress">Task Progress:</string>
+    <string name="phonecall">Phonecall</string>
+    <string name="e_mail">E-mail</string>
+    <string name="youKant">you Kant !</string>
+    <string name="taskname">taskname</string>
+    <string name="stepname">stepname</string>
+    <string name="time_progress">Time Progress: %s</string>
+    <string name="time_budget">Time Budget:</string>
+    <string name="time_budget_">Time Budget: %s</string>
+    <string name="task_already_ended">Task already ended.</string>
+    <string name="sure_close_task">Are you sure to close this task?</string>
+    <string name="confirm">Confirm</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="excel_report_created_uploaded">Excel report created and uploaded.</string>
+    <string name="hours">" hrs."</string>
+    <string name="cloud_record_ok">cloud record - OK</string>
+    <string name="cloud_record_fail">cloud record - fail</string>
+    <string name="cloud_update_ok">cloud update - OK</string>
+    <string name="cloud_update_fail">cloud update FAIL</string>
+    <string name="cloud_doc_not_found">cloud document NOT found</string>
+    <string name="realm_backup_ok">FTP backup OK</string>
+    <string name="realm_backup_fail">FTP backup FAIL</string>
+    <string name="need_to_parse">need to parse first</string>
+    <string name="download_backup">Download backup ?</string>
+    <string name="are_you_sure">Current activity db is empty, download it from backup?</string>
+    <string name="version">version: </string>
+    <string name="not_completed">Locked\t\t</string>
+    <string name="task_in_progress">In Progress</string>
+    <string name="task_complete">Task Complete</string>
+    <string name="task_can_start">Ready to start</string>
+    <string name="itsNotYourTask">it\'s not your task, we sorry</string>
+    <string name="notAllPredecessorsAreFinished">Not all predecessors are finished</string>
+    <string name="duration_hrs">Duration, hrs:</string>
+    <string name="in_progress">in progress</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="download_and_parse_tasks">Get Tasks</string>
+    <string name="delete_all">Delete All</string>
+    <string name="communicate">Communicate</string>
+    <string name="sync_cloud">Sync Cloud</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="cancel">Cancel</string>
+    <string name="email_sent">Email sent</string>
+    <string name="bad_account_details">Bad account details</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="email_failed_to_send">Email failed to send</string>
+    <string name="email_unexpected_error">Unexpected error occurred  while sending email</string>
+    <string name="current_uid_is_empty">current UID/event is empty</string>
+    <string name="sure_q">sure?</string>
+    <string name="no_internet">No internet</string>
+    <string name="predecessors_uid">Predecessors UID:</string>
+    <string name="deadline_">Deadline:\n%s</string>
+    <string name="deadline">Deadline</string>
+    <string name="assigned_to">Assigned to:</string>
+    <string name="select_or_search_project">Select or Search Project</string>
+    <string name="no_phonecall"></string>
+    <string name="close">Close</string>
+    <string name="no_email"></string>
+    <string name="enter_your_message">Enter Your Message</string>
+    <string name="send_feedback_to_developers">Send feedback to developers</string>
+    <string name="no_meeting"></string>
+    <string name="send">Send</string>
+    <string name="meeting">Meeting</string>
+    <string name="completed">Completed</string>
+
+    <string name="overBudgetReason">Plz, enter OverBudget Reason</string>
+    <string name="additional_time_hrs">Additional Time, Hrs</string>
+    <string name="remainingTime">Remaining Time, hrs:</string>
+
+    <string name="version_format" translatable="false">%s\n%s</string>
+    <string name="status">NEW</string>
+    <string name="task_you_can_start">Tasks you can Start:</string>
+    <string name="readed">Read</string>
+    <string name="notReaded">Unread</string>
+    <string name="uid_">UID:</string>
+    <string name="show_for_all_users">All users</string>
+    <string name="sync_is_running">Sync is running!</string>
+    <string name="sort_by_deadline" translatable="false">Sort by deadline</string>
+</resources>
